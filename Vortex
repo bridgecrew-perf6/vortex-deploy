@@ -6,20 +6,20 @@ _get_repolink () {
     regex='(https?)://github.com/.+/.+'
     if [[ $VORTEX_REPO == "vortexub" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1IZWxsQm90L1BsdWdpbnMvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2thbmVraWtlbjQ0L1ZvcnRleFVCL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
     elif [[ $VORTEX_REPO == "VORTEXUB" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1IZWxsQm90L1BsdWdpbnMvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2thbmVraWtlbjQ0L1ZvcnRleFVCL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
     elif [[ $VORTEX_REPO =~ $regex ]]
     then
         if [[ $VORTEX_REPO_BRANCH ]]
         then
-            echo "${VORTEX_REPO}/archive/${HELL_REPO_BRANCH}.zip"
+            echo "${VORTEX_REPO}/archive/${VORTEX_REPO_BRANCH}.zip"
         else
-            echo "${VORTEX_REPO}/archive/master.zip"
+            echo "${VORTEX_REPO}/archive/main.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL1RoZS1IZWxsQm90L1BsdWdpbnMvYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL2thbmVraWtlbjQ0L1ZvcnRleFVCL2FyY2hpdmUvbWFpbi56aXA=" | base64 -d
     fi
 }
 
@@ -34,10 +34,10 @@ _starter () {
     rm -rf "$zippath"
     sleep 5
     cd $VORTEX_PATH
-    echo "••• STARTING VORTEX USERBOT •••"
+    echo "•• Starting Vortex Userbot ••"
 
-    python3 ./setup/updater.py ./requirements.txt requirements.txt
-    python3 -m vortex
+    python3 ../setup/updater.py ../requirements.txt requirements.txt
+    python3 -m Vortex
 }
 
 _starter
