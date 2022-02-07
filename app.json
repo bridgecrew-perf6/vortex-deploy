@@ -49,70 +49,70 @@
       "value": "",
       "required": true
     },
-   "SUDO_USERS": {
-   "description": "Sudo Users Ids",
-   "value": "",
-   "required": false
-  },
+    "SUDO_USERS": {
+      "description": "Sudo Users Ids",
+      "value": "",
+      "required": false
+    },
     "PRIVATE_GROUP_ID": {
-   "description": "Make a private group and add rose bot (@MissRose_bot) there and make him admin, then for getting group id put /id command note than and put here and below",
-   "value": "",
-   "required": true
-   },
-  "PLUGIN_CHANNEL": {
-   "description": "Put same value as PRIVATE_GROUP_ID",
-   "value": "",
-   "required": true
+      "description": "Make a private group and add rose bot (@MissRose_bot) there and make him admin, then for getting group id put /id command note than and put here and below",
+      "value": "",
+      "required": true
+    },
+    "PLUGIN_CHANNEL": {
+      "description": "Put same value as PRIVATE_GROUP_ID",
+      "value": "",
+      "required": true
     },
     "CUSTOM_PMPERMIT": {
-   "description": "Leave this as it is! Don't edit or change",
-   "value": "Do not spam here !!, otherwise you will be blocked automatically."
+      "description": "Leave this as it is! Don't edit or change",
+      "value": "Do not spam here !!, otherwise you will be blocked automatically."
     },
     "MAX_SPAM": {
-   "description": "No. of messages one can send in your PM before being approved. By default, it is setted to 3.",
-   "value": "3",
-   "required": false
-  },
-   "CHROME_BIN": {
-   "description": "Leave as such, Google Chrome (or) Chromium binary location for selenium based modules.",
-   "value": "/app/.apt/usr/bin/google-chrome",
-   "required": false
-  },
-  "CHROME_DRIVER": {
-   "description": "Leave as such, ChromeDriver location for selenium based modules",
-   "value": "/app/.chromedriver/bin/chromedriver",
-   "required": false
- },
-  "OCR_SPACE_API_KEY": {
-   "description": "Required for OCR functionality. Get from https://ocr.space/ocrapi(Not Mandatory)",
-   "value": "",
-   "required": false
-  },
-  "REM_BG_API_KEY": {
-   "description": "Required for Removing image background functionality. Get from https://www.remove.bg/ (Not Mandatory)",
-   "value": "",
-   "required": false
+      "description": "No. of messages one can send in your PM before being approved. By default, it is setted to 3.",
+      "value": "3",
+      "required": false
     },
-  "ALIVE_PIC": {
-   "description": "telegra.ph link to the image you want as your alive pic, (Don't change it)",
-   "value": "",
-   "required": false
+    "CHROME_BIN": {
+      "description": "Leave as such, Google Chrome (or) Chromium binary location for selenium based modules.",
+      "value": "/app/.apt/usr/bin/google-chrome",
+      "required": false
     },
-  "PMPERMIT_PIC": {
-  "description": "telegra.ph link to the image you want as pmpermit pic, leave blank for default (Don't change it)",
-  "value": "",
-  "required": false
+    "CHROME_DRIVER": {
+      "description": "Leave as such, ChromeDriver location for selenium based modules",
+      "value": "/app/.chromedriver/bin/chromedriver",
+      "required": false
     },
-   "HEROKU_APP_NAME": {
+    "OCR_SPACE_API_KEY": {
+      "description": "Required for OCR functionality. Get from https://ocr.space/ocrapi(Not Mandatory)",
+      "value": "",
+      "required": false
+    },
+    "REM_BG_API_KEY": {
+      "description": "Required for Removing image background functionality. Get from https://www.remove.bg/ (Not Mandatory)",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_PIC": {
+      "description": "telegra.ph link to the image you want as your alive pic, (Don't change it)",
+      "value": "",
+      "required": false
+    },
+    "PMPERMIT_PIC": {
+      "description": "telegra.ph link to the image you want as pmpermit pic, leave blank for default (Don't change it)",
+      "value": "",
+      "required": false
+    },
+    "HEROKU_APP_NAME": {
       "description": "YOUR app name ",
       "value": "",
       "required": true
     },
-   "TEMP_DOWNLOAD_DIRECTORY": {
-   "description": "Where downloaded files will go.",
-   "value": "./Vortex/DOWNLOADS/",
-   "required": false
-  },
+    "TEMP_DOWNLOAD_DIRECTORY": {
+      "description": "Where downloaded files will go.",
+      "value": "./Vortex/DOWNLOADS/",
+      "required": false
+    },
     "TZ": {
       "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
       "value": "Asia/Kolkata",
@@ -130,7 +130,7 @@
   },{
     "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
   },{
-     "url":"https://github.com/nandydark/heroku-buildpack-neofetch.git"
+    "url":"https://github.com/nandydark/heroku-buildpack-neofetch.git"
   },{
     "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
   },{
